@@ -1,5 +1,5 @@
 CREATE TABLE course_schedule (
-    "ID" serial NOT NULL,
+    "ID" serial NOT NULL UNIQUE,
     "Day" date NOT NULL,
     "Start" time without time zone NOT NULL,
     "Duration" float4 check ("Duration" > 0) NOT NULL,

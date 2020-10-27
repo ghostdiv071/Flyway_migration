@@ -1,5 +1,5 @@
 CREATE TABLE lecturer (
-    "ID" serial NOT NULL,
+    "ID" serial NOT NULL UNIQUE,
     "Name" varchar(255) NOT NULL,
     "Second_name" varchar(255),
     "Last_name" varchar(255) NOT NULL,
